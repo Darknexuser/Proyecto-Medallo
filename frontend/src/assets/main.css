@@ -1,0 +1,66 @@
+@import './base.css';
+
+#app {
+  width: 100%; /* Cambiado de max-width a width */
+  min-height: 100vh; /* Asegurar que ocupe al menos toda la altura de la ventana */
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo general de links */
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #4caf50;
+}
+
+/* Botones reutilizables */
+.button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #57c182;
+}
+
+/* Estilos para asegurar que los contenedores ocupen todo el ancho */
+.container-full {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+/* Layout responsive */
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  #app {
+    width: 100%;
+    flex: 1;
+  }
+}

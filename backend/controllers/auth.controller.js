@@ -39,7 +39,9 @@ export const loginUser = async (req, res) => {
 
     const payload = {
       id: usuario.id_usuario,
-      tipo: usuario.tipo
+      tipo: usuario.tipo,
+      nombre: usuario.nombre,
+      correo: usuario.correo
     };
 
     console.log("Payload antes de generar token:", payload);
